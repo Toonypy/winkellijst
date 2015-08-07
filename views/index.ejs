@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/voegToe.css' />
+    <link rel='stylesheet' href='/stylesheets/menu.css' />
+    <script src="/javascripts/jquery-1.11.3.min.js"></script>
+    <script src="/javascripts/check.js"></script>
+    <script src="/javascripts/voegToe.js"></script>
+    <script src="/javascripts/menu.js"></script>
+  </head>
+  <body>
+    <main>
+      <div><img class="menuIcon" src="/icons/menu.png" alt="edit" /><span class="inputSpan"><input type="text" id="inToevoegen" class="lang" placeholder="Artikel toevoegen" /></span></div>
+      <div id="lijst">
+        <ul>
+          <li class="lijstItem">Item<img class="icon" src="/icons/edit.png" alt="edit" />
+            <div class="clear"></div>
+          </li>
+          <li class="lijstItem">Item<img class="icon" src="/icons/edit.png" alt="edit" /><div class="clear"></div></li>
+          <li class="lijstItem">Item<img class="icon" src="/icons/edit.png" alt="edit" /><div class="clear"></div></li>
+          <li class="lijstItem">Item<img class="icon" src="/icons/edit.png" alt="edit" /><div class="clear"></div></li>
+        </ul>
+      </div>
+    </main>
+    <div id="voegToe" class="overlay">
+      <div id="subVoegToe" class="kader">
+        <div class="titel"></div>
+        <div id="voegToeInfo">
+          <ul>
+            <li>Aantal:<input type="number" /></li>
+            <li>Eenheid:<input type="text" /></li>
+            <li>Winkel:<select id="winkelSelect"></select></li>
+            <li>Notitie:<input type="text"/></li>
+          </ul>
+        </div>
+        <input type="submit" value="Voeg artikel toe" id="voegItemToe"/>
+        <input type="submit" value="Annuleren" id="voegItemAnn" />
+      </div>
+    </div>
+    <div id="menu" class="overlay">
+      <div id="subMenu" class="kader"><span class="kaderTitel">Menu</span>
+        <div class="nieuwWinkel">
+          Nieuwe winkel:<br /> <input type="text" id="winkelNaam" name="winkelNaam" placeholder="Naam"/> <br />
+          <input type="submit" value="Voeg winkel toe" id="voegWinkelToe"/> <br /> <br />
+          <input type="submit" value="Annuleren" id="voegWinkelAnn" />
+          <p>Winkels:</p>
+          <ul id="winkelLijst">
+
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

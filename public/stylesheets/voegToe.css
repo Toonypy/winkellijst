@@ -1,0 +1,21 @@
+#inToevoegen {
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+    text-indent: 15px;
+}
+
+#voegToeInfo {
+    text-align: left;
+}
+
+.inputSpan {
+    display: block;
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+.menuIcon {
+    height: 29px;
+    float: right;
+}
